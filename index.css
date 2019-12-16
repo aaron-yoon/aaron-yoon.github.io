@@ -124,8 +124,10 @@ body #balloon{
 }
 .profile-picture{
     /* This is to edit just the profile picture */
-    width: 300px;
-    height: 200px;  
+    max-width: 350px;
+    max-height: 250px;
+    min-width:300px;
+    min-height:200px;
     border-radius: 50px;
 }
 .about #intro-text{
@@ -257,7 +259,7 @@ body #balloon{
 
 .work{
     text-align: center;
-    padding: 30px;
+    margin: 5%;
 }
 .work #work-experience{
     text-align: left;
@@ -266,4 +268,5 @@ body #balloon{
 
 #work-history{
     margin: 0 0 0 30px;
+    width: 70%;
 }
