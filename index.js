@@ -22,7 +22,6 @@ t1.fromTo(titlecardpicture, 2, {height: "0%"}, {height: "70%", ease: Power2.ease
 
 const about = document.querySelector(".about");
 
-
 /*
 const controller = new ScrollMagic.Controller();
 const scene = new ScrollMagic.Scene({

@@ -4,6 +4,7 @@ h2{
     font-weight: 1000;
     font-size: 32px;
     margin: 30px 0 10 0;
+    text-align: center;
 }
 h3{
     font-weight: 1000;
@@ -11,6 +12,10 @@ h3{
 }
 p, ul, li{
     font-size: 14px; 
+}
+
+html{
+    scroll-behavior: smoooth;
 }
 
 
@@ -102,15 +107,15 @@ body #balloon{
 
 
 
-
-
 /* About Me */
 .about{
     display: flex;
     padding: 15px;
-    margin: 10 0 35 0;
+    margin: 10 0 10 0;
     flex-wrap: wrap;
     flex-direction: row;
+    background-color: rgba(37, 37, 37, 0.1);
+
     /*
     box-sizing: border-box;
     border-bottom: 2px solid #000;
@@ -121,6 +126,7 @@ body #balloon{
     margin: 30px;
     text-align: center;
     flex: 1;
+    justify-content: center;
 }
 .profile-picture{
     /* This is to edit just the profile picture */
@@ -132,13 +138,13 @@ body #balloon{
 }
 .about #intro-text{
     flex: 2;
-    padding: 5px 50px 0 30px;
+    padding: 5px 50px 30 30px;
     margin: 5px;
     min-width: 300px;
     max-width: 60%;
     width: 50%;
 }
-.about hr{
+#about-hr{
     width: 90%;
     border-bottom: 2px solid rgba(0,0,0);
 }
@@ -153,10 +159,10 @@ body #balloon{
 
 
 .projects{
-
     flex-direction: column;
     text-align: center;
-    padding: 30px 0 0 0;
+    padding: 10 0 20 0;
+    background-color: rgba(37, 37, 37, 0.1);
     /*background-color: rgba(255, 239, 197, 0.4); */
 }
 
@@ -177,6 +183,8 @@ body #balloon{
     margin: 15px;
     min-width: 350px;
     max-width: 20%;
+    transition: .3s;
+    background-color: white;
 }
 
 .grid-item #project-points{
@@ -184,6 +192,12 @@ body #balloon{
     text-align: left;
     font-size: 14px;
 }
+
+.grid-item:hover{
+    transform: scale(1.05);
+}
+
+
 
 
 /* Technical Skill and Education */
@@ -209,6 +223,13 @@ body #balloon{
     flex: 1;
     text-align: center;
     min-width: 250px;
+    /*
+    overflow: hidden;
+    border-radius: 50px;
+    border: solid;
+    margin: 10px;
+    */
+
 }
 .language-icon{
     display: flex;
@@ -249,7 +270,8 @@ body #balloon{
 }
 
 
-.projects hr{
+
+#projects-hr{
     width: 90%;
     border-bottom: 2px solid rgba(0,0,0);
 }
@@ -259,14 +281,13 @@ body #balloon{
 
 .work{
     text-align: center;
-    margin: 5%;
+    margin: 0 5% 5% 5%;
 }
 .work #work-experience{
     text-align: left;
-
 }
 
 #work-history{
-    margin: 0 0 0 30px;
+    margin: 0 0 0 5%;
     width: 70%;
 }

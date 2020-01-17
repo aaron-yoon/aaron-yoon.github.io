@@ -3,12 +3,7 @@
     <head>
         <title>Aaron Yoon</title>
         <meta charset = "utf-8"> 
-            <!-- ** Bootstrap **
-                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-                integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-            -->
         <link rel ="stylesheet" href = "index.css">
-
         <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
         
         <!--Link to icons used in Navigation Bar-->
@@ -17,9 +12,9 @@
     </head>
     <nav class = "navigation-bar">
         <a href = "#" title = "Home" class = "nav-icons"><i class="fa fa-home" aria-hidden="true"></i></a>
-        <a href = "#projects" title = "Projects" class = "nav-icons"><i class="fa fa-file-code-o" aria-hidden="true"></i></a>
-        <a href = "#skill-education" title = "Education" class = "nav-icons"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
-        <a href = "#work-experience" title = "Work Experience" class = "nav-icons"><i class="fa fa-briefcase" aria-hidden="true"></i></a>
+        <a href = "#about-hr" title = "Education" class = "nav-icons"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
+        <a href = "#language-skill-hr" title = "Projects" class = "nav-icons"><i class="fa fa-file-code-o" aria-hidden="true"></i></a>
+        <a href = "#projects-hr" title = "Work Experience" class = "nav-icons"><i class="fa fa-briefcase" aria-hidden="true"></i></a>
     </nav>
     <body>
         <!-- <img id = "balloon" src = "Pictures/balloon.png" alt = "Balloon go up!">
@@ -44,20 +39,22 @@
                 <h2>About Me</h2>
                 <p>
                     Hello, I am a computer science major currently attending California State University of Fullerton.
-                    I tend to find myself starting projects that I believe that are fun, useful, and in places where I learn a lot about a new area.
+                    I tend to find myself starting projects that I believe that are both fun and beneficial to my coding career.
                     Coding definitely has its challenging moments and the satisfication of accomplishing and overcoming difficult 
-                    problems always ignites my passion to move on to another challenge.
+                    problems always ignites my passion to move on to the next challenge.
                 </p>
                 <p>
+                    Currently, you'll find me working on projects that involve cloud computing and storage, and exploring the use cases of algorithms.  
                     As you take a look at my personal website, I hope you learn more about me! 
                     Thank you for taking the time to come to my website and feel free to contact me at anytime!
                 </p>
 
             </div>
-            <hr>
         </section>
+        <hr id = "about-hr">
             <!-- Skills/Education -->
         <section class = "skill-education" id = "skill-education">
+            <h2>Language Skill</h2>
             <div class = "language-skill">
                 <!-- Proficient: C++ / Java / Html / CSS / JS -->
                 <div id = "level">
@@ -85,70 +82,12 @@
                 <div id = "level">
                     <h3>Software</h3>
                     <p>Visual Studio/Code</p>
-                    <p>IntelliJ</p>
                     <p>Android Studio</p>
                     <p>Windows, Linux, MAC OSX</p>
                 </div>
             </div>
     
-            <hr>
-            <!-- 
-
-            <div class = "education" id = "education">
-                <h2>California State University of Fullerton - Education Courses</h2>
-
-                <div id = "school-courses">
-                    <p>CPSC 323: Compilers and Languages</p>
-                    <li id = "course-info">Learning the principles of Programming Langauges and compiler design. course focus on the foundation of Programming Languages, compiler design, FSM and advanced features to implement optimization</li>
-                </div>
-                <div id = "school-courses">
-                    <p>CPSC 332: File Structures and Database Systems</p>
-                    <li id = "course-info"></li>
-                </div>
-                
-                <div id = "school-courses">
-                    <p>CPSC 349: Web Front-End Engineering</p>
-                        
-                </div>
-                
-                <div id = "school-courses">
-                    <p>CPSC 351: Operating Systems Concepts</p>
-                    <li id = "course-info"></li>
-                </div>
-                
-                <div id = "school-courses">
-                    <p>CPSC 353: Computer Security</p>
-                    <li id = "course-info">Learning </li>
-                </div>
-                <div id = "school-courses">
-                    <p>CPSC 362: Foundations of Software Engineering</p>
-                    <li id = "course-info">Scrum manager</li>
-                </div>
-                
-                <div id = "school-courses">
-                    <p>CPSC 411: Mobile Dev Programming</p>
-                    
-                </div>
-                
-                <div id = "school-courses">
-                    <p>CPSC 454: Cloud Computing and Security</p>
-                    <li id = "course-info">Cloud computing models and applications, virtualization technologies, different security techniques</li>
-                    <li id = "course-info">project design, management, implementation, testing and reporting skills </li>
-                </div>
-                <div id = "school-courses">
-                    <p>CPSC 471: Computer Communications</p>
-                    <li id = "course-info">Understanding the fundamentals of network architectures and protocls and applying them to analyze and design networks</li>
-                    <li id = "course-info">Understanding the layer network architecture, application layer protocols, TCP/IP protocol, principles of media access, switching, routing and flow control, fundamentals of data communications, basics of network protocol design and analysis using WireShark, fundamentals of wireless and mobile networks (CDMA and GSM)</li>                    
-                </div>
-                <div id = "school-courses">
-                    <p>CPSC 485: Computational Bioinformatics</p>
-                    <li id = "course-info">Taking an algorithmic approach to tackle biological issues where computer science can be a benefit. Problems such as motif finding, genome rearrangement, DNA sequence comparison, sequence alignment, DNA sequencing, reapeat finding, and genee expression analysis</li>
-                    <li id = "course-info">Focus: exhaustive search, greedy algorithms, dynamic algorithms, divide-and-conquer, graph algorithms, combinatorial pattern matching, evolutionary trees, and hierarchical clustering.</li>
-                </div>
-            </div>
-            
-            <hr>
-            -->
+            <hr id = "language-skill-hr">
         </section>
 
         <!-- Projects/Codes -->
@@ -184,14 +123,6 @@
                     <li id = "project-points">A website allowing users to dynamically adjust (based on serving size) and search a recipe to their favorite dish with the help of Yummly API</li>
                     <li id = "project-points">Primarily focusing on the application of Javascript, AJAX, and JQuery</li>
                 </figure>
-                <!--
-                <figure class = "grid-item">
-                    <h3>Lexical Analyzer</h3>
-
-                    <li id = "project-points">Created a lexical analyzer to read any .txt file to determine the lexeme and token of each character or word</li>
-                    <li id = "project-points"></li>
-                </figure>
-                -->
                 <figure class = "grid-item">
                     <h3>Networking App</h3>
 
@@ -213,36 +144,30 @@
                 </figure>
 
                 <!--Dynamic programming - Edit Distance Demonstation-->
-
             </div>
-            <hr>
         </section>
-
+        <hr id = "projects-hr">
 
         <!-- Work Experience-->
         <section class = "work" id = "work">
             <h2>Experience</h2>
             
             <div id = "work-experience">
-                <h3>Software Developer (intern) - Metro by T-Mobile</h3>
-                <li id = "work-history">Created two executable programs to conserve time on tasks such as allocating a certain quantity of items to specific stores and calculating sales commission for employees</li>
-                <li id = "work-history">Worked with executives to understand what types of programs could be used and created to conserve time and adjust the program to their liking</li>
-
+                <h3>Software Developer (intern) - MetroPCS</h3>
+                <li id = "work-history">Developed executable programs for upper management that would reduce time required to allocate 
+                    inventory of items and supplies to a store and computing sales commissions for employees.</li>
+                <li id = "work-history">Utilizing Java’s GUI, Apache POI, and embedding File Explorer to select and parse through CSV files outputted from the POS.</li>
             </div>
             <div id = "work-experience">
                 <h3>Regional Manager - Metro by T-Mobile (October 2018 - Present)</h3>
-                <li id = "work-history">Managing six stores located in the Inland Empire to meet goal expectations and properly adjusting focus to maximize profits based on sales patterns</li>
-                <li id = "work-history">Developing a sales plan that resulted in consistent sales figure of 27% above the LA market by optimizing marketing, revising sales pitches, and developing sales promotions after analyzing current sales data and observing sales performance.</li>
-                <li id = "work-history">Analyzed current revenue streams and sales data to determine areas of focus and ways to increase revenue alongside interviewing salespeople and managers to help develop plans to improve sales</li>
-
+                <li id = "work-history">Managing four stores located in the Inland Empire to meet sales quota and KPI expectations</li>
+                <li id = "work-history">Developing a sales plan that resulted consistent sales figure of 27% above the LA market by 
+                    optimizing marketing, revising sales pitches, and developing sales promotions</li>
+                <li id = "work-history">Analyzed current revenue streams and sales data to determine areas of focus with results 
+                    yielding over a 14% increase in monthly consumers over 5 month period</li>
             </div>
-            <!--
-            <div id = "work-experience">
-                <h3>Supervisor - MetroPCS (August 2016 - October 2018)</h3>
-                <li id = "work-history"></li>
-            </div>
-            -->
         </section>
+
         <!-- Footer -->
         <footer>
 
