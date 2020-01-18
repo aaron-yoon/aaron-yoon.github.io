@@ -17,8 +17,6 @@
         <a href = "#projects-hr" title = "Work Experience" class = "nav-icons"><i class="fa fa-briefcase" aria-hidden="true"></i></a>
     </nav>
     <body>
-        <!-- <img id = "balloon" src = "Pictures/balloon.png" alt = "Balloon go up!">
-        -->
         <main>
             <div class = "title-card-picture">
                 <div class = "title-card-text">
@@ -32,23 +30,29 @@
 
         <!-- About Me -->
         <section class = "about">
-            <p id = "intro-picture">
-                <img class = "profile-picture" src = "Pictures/me.JPG" alt = "Aaron Profile Picture">
-            </p>
+                <div id = "intro-picture">
+                    <img class = "profile-picture" src = "Pictures/me.JPG" alt = "Aaron Profile Picture">
+                    <div>
+                        <p id = "about-contact"><strong>Contact Me Here!</strong></p>
+                        <div id = "about-icon">
+                            <p id = "about-margin"><a href="https://github.com/aaron-yoon" target="_blank" title="Github"><img src="Pictures/github.png" height="50" alt="github"></a></p>
+                            <p id = "about-margin"><a href="mailto:aaronshii@icloud.com" target="_blank" title="Email"><img src="Pictures/email.png" height="60" alt="email"></a></p>
+                        </div>
+                    </div>
+                </div>
             <div id = "intro-text">
                 <h2>About Me</h2>
+                <p>Hello, I am a <strong> computer science </strong>major currently attending <strong>California State University of Fullerton.</strong></p>
                 <p>
-                    Hello, I am a computer science major currently attending California State University of Fullerton.
                     I tend to find myself starting projects that I believe that are both fun and beneficial to my coding career.
                     Coding definitely has its challenging moments and the satisfication of accomplishing and overcoming difficult 
                     problems always ignites my passion to move on to the next challenge.
                 </p>
                 <p>
-                    Currently, you'll find me working on projects that involve cloud computing and storage, and exploring the use cases of algorithms.  
+                    Currently, you'll find me working on projects that involve <strong>cloud computing and storage</strong>, and exploring the <strong>use cases of algorithms.</strong>  
                     As you take a look at my personal website, I hope you learn more about me! 
-                    Thank you for taking the time to come to my website and feel free to contact me at anytime!
+                    Thank you for visiting and feel free to contact me at anytime!
                 </p>
-
             </div>
         </section>
         <hr id = "about-hr">
@@ -59,24 +63,40 @@
                 <!-- Proficient: C++ / Java / Html / CSS / JS -->
                 <div id = "level">
                     <h3>Proficient</h3>
-                    <div class = "language-icon">
-                        <p class = "language-icon"><img src="Pictures/c++icon.png" alt="c++" height = "50px"></p>
-                        <p class = "language-icon"><img src="Pictures/java.png" alt="java" height = "50px"></p>
+                    <div class = "language-container">
+                        <div>
+                            <p class = "language-icon"><img src="Pictures/c++icon.png" alt="c++" height = "50px"></p>
+                            <p>C++</p>
+                        </div>
+                        <div>
+                            <p class = "language-icon"><img src="Pictures/java.png" alt="java" height = "50px"></p>
+                            <p>Java</p>
+                        </div>
                     </div>
                 </div>
                 <div id = "level">
                     <h3>Competent</h3>
-                    <div class = "language-icon">
-                        <p class = "language-icon"><img src="Pictures/pythonicon.png" alt="c++" height = "50px"></p>
-                        <p class = "language-icon"><img src="Pictures/SQL.png" alt="java" height = "50px"></p>
-                        <p class = "language-icon"><img src="Pictures/html5.png" alt="html" height = "50px"></p>
-                        <p class = "language-icon"><img src="Pictures/css3icon.png" alt="css" height = "50px"></p>
-                        <p class = "language-icon"><img src="Pictures/Jsicon.png" alt="javascript" height = "50px"></p>
-                        <!--
-                            <ul class = "language-icon"><img src="pictures/html5.png" alt="html" height = "50px"></p>
-                            <ul class = "language-icon"><img src="pictures/css3icon.png" alt="css" height = "50px"></p>
-                            <ul class = "language-icon"><img src="pictures/jsicon.png" alt="javascript" height = "50px"></p>
-                        -->
+                    <div class = "language-container">
+                        <div>
+                            <p class = "language-icon"><img src="Pictures/pythonicon.png" alt="c++" height = "50px"></p>
+                            <p>Python</p>
+                        </div>
+                        <div>
+                            <p class = "language-icon"><img src="Pictures/SQL.png" alt="java" height = "50px"></p>
+                            <p>SQL</p>
+                        </div>
+                        <div>
+                            <p class = "language-icon"><img src="Pictures/html5.png" alt="html" height = "50px"></p>
+                            <p>HTML</p>
+                        </div>
+                        <div>
+                            <p class = "language-icon"><img src="Pictures/css3icon.png" alt="css" height = "50px"></p>
+                            <p>CSS</p>
+                        </div>
+                        <div>
+                            <p class = "language-icon"><img src="Pictures/Jsicon.png" alt="javascript" height = "50px"></p>
+                            <p>Javascript</p>
+                        </div>
                     </div>
                 </div>
                 <div id = "level">
@@ -100,50 +120,68 @@
                 Each grid container will have the following:
                         1) Still picture and hover effect to play small clip
                         2) Description of the project / accomplishment
-                        3) Source to code/actual project (wheter link or )
-                        4) Will open a mini window
+                        3) Source to code/actual project
+                        4) Will open modal window
             -->
             <div class = "grid-container">
                 <figure class = "grid-item">
+                    <img src="Pictures/FTP-Server-Client.png" alt="FTP Server-Client">
+                    <div id = "project-link">
+                        <a class="link" href="https://github.com/aaron-yoon/FTP-Server-Client" target="_blank">Github</a>
+                    </div>
                     <h3>FTP Server</h3>
-
+                
                     <li id = "project-points">Designing and constructing a FTP server and client application that communicates with each other through TCP sockets</li>
                     <li id = "project-points">Allows user to upload, download, and list the content that the server hosts.</li>
                 </figure>
                 <figure class = "grid-item">
+                    <img src="Pictures/Weather-Site.png" alt="weather site">
+                    <div id = "project-link">
+                        <a class="link" href="https://raspberry-cloud-3523a.firebaseapp.com/home.html" target="_blank">Website</a>
+                        <a class="link" href="https://github.com/aaron-yoon/Weather-Website-using-Cloud-Services" target="_blank">Github</a>
+                    </div>
                     <h3>Weather App</h3>
 
-                    <li id = "project-points">Utilizing a Raspberry Pi to gather data (temperature, humidity, and location) to read and write to Amazon's AWS services using API Gateways, Lambdas, and DynamoDB</li>
-                    <li id = "project-points">Creating lambda functions for the Raspberry to communicate with DynamoDB and to host our node.js files to dynamically change our weather website.</li>
-                    <li id = "project-points">Hosting static pages on Firebase and allows users to sign up and displays content catered to the user such as their city's weather & temperature.</li>
+                    <li id = "project-points">A website that displays weather data such as temperature, humidity, and location collected from a Raspberry Pi</li>
+                    <li id = "project-points">Utilizing Amazon's AWS Lambda, API Gateways, and DynamoDB to store data retrieved and Firebase to store user specific info to display on website</li>
                 </figure>
                 <figure class = "grid-item">
+                    <img src="Pictures/Recipe-io.png" alt="recipe.io">
+                    <div id = "project-link">
+                        <a class="link" href="https://s3.us-east-2.amazonaws.com/recipe.io/index.html" target="_blank">Website</a>
+                        <a class="link" href="https://github.com/aaron-yoon/recipe.io" target="_blank">Github</a>
+                    </div>
                     <h3>Recipe.io</h3>
 
                     <li id = "project-points">A website allowing users to dynamically adjust (based on serving size) and search a recipe to their favorite dish with the help of Yummly API</li>
-                    <li id = "project-points">Primarily focusing on the application of Javascript, AJAX, and JQuery</li>
                 </figure>
                 <figure class = "grid-item">
+                    <img src="Pictures/Networking-App.png" alt="networking app">
+                    <div id = "project-link">
+                        <a class="link" href="https://github.com/aaron-yoon/Networking-App" target="_blank">Github</a>
+                    </div>
                     <h3>Networking App</h3>
 
                     <li id = "project-points">A social networking site that introduces users to potential new hobbies and interests based on people most similar to the user. 
-                        Allows users to link with like-minded indiviuals and broden their scope of interests</li>
-                    <li id = "project-points">Utilizing Firebase's database to read, write, and display content for the website</li>
+                        Allows users to link with like-minded individuals and broaden their scope of interests</li>
                 </figure>
                 <figure class = "grid-item">
-                    <h3>Chat Bot</h3>
+                    <img src="Pictures/Edit-Distance.png" alt="Edit Distance">
+                    <div id = "project-link">
+                        <a class="link" href="https://github.com/aaron-yoon/Edit-Distance-Dynamic-Programming" target="_blank">Github</a>
+                    </div>
+                    <h3>Edit Distance</h3>
 
-                    <li id = "project-points">Designed and developed a support system that would answer questions that users may have about a website</li>
-                    <li id = "project-points">Parsing through the user's input to determine what the user is asking for and will respond accordingly</li>
+                    <li id = "project-points">A program that computes the edit distance between two words using dynamic programming</li>
                 </figure>
                 <figure class = "grid-item">
+                    <img src="Pictures/inventory adjust.png" alt="Edit Distance">
                     <h3>Inventory Adjustment</h3>
 
-                    <li id = "project-points">An executable file with a GUI that reads an excel file (.xlsx) selected by the user. </li>
-                    <li id = "project-points">Outputs an excel file determining the items and quantity needed to be allocated for each specific store based on prior weeks sales</li>
+                    <li id = "project-points">Utilizing Java’s GUI, Apache POI, and embedding File Explorer to select and parse through CSV files outputted from the POS.</li>
+                    <li id = "project-points">An executable file that reads an excel file (.xlsx) selected by the user and 
+                        outputs an .xlsx that determines the items and quantity needed to be allocated to a specific store. </li>
                 </figure>
-
-                <!--Dynamic programming - Edit Distance Demonstation-->
             </div>
         </section>
         <hr id = "projects-hr">
@@ -154,9 +192,9 @@
             
             <div id = "work-experience">
                 <h3>Software Developer (intern) - MetroPCS</h3>
-                <li id = "work-history">Developed executable programs for upper management that would reduce time required to allocate 
+                <li id = "work-history">Developed two executable programs for upper management that would reduce time required to allocate 
                     inventory of items and supplies to a store and computing sales commissions for employees.</li>
-                <li id = "work-history">Utilizing Java’s GUI, Apache POI, and embedding File Explorer to select and parse through CSV files outputted from the POS.</li>
+                <li id = "work-history">Increased work productivity by saving time from tedious tasks that were required weekly completion from 13 locations</li>
             </div>
             <div id = "work-experience">
                 <h3>Regional Manager - Metro by T-Mobile (October 2018 - Present)</h3>
@@ -169,8 +207,12 @@
         </section>
 
         <!-- Footer -->
-        <footer>
-
+        <footer class = "footer">
+            <h2>Contact Me!</h2>
+            <div id = "footer-icon">
+                <p><a href="https://github.com/aaron-yoon" target="_blank" title="Github"><img src="Pictures/github.png" height="50" alt="github"></a></p>
+                <p><a href="mailto:aaronshii@icloud.com" target="_blank" title="Email"><img src="Pictures/email.png" height="60" alt="email"></a></p>
+            </div>
         </footer>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" 

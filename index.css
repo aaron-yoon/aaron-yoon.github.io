@@ -15,9 +15,13 @@ p, ul, li{
 }
 
 html{
-    scroll-behavior: smoooth;
+    scroll-behavior: smooth;
 }
 
+strong{
+    font-size: 18px;
+    font-weight: bold;
+}
 
 /* Navigation Bar */
 .navigation-bar{
@@ -50,13 +54,6 @@ html{
 
 
 body{
-    /*
-    background-image: url("Pictures/stars.png");
-    background-repeat: repeat;
-    background-color: rgb(105, 105, 105);
-    margin-left: 5%;
-    margin-right: 5%;
-    */
     font-family: 'Nunito', sans-serif;
 }
 
@@ -78,7 +75,7 @@ body #balloon{
 }
 .title-card-picture{
     /*background-image: url("Pictures/Korea.jpeg");*/
-    background-image: url("Pictures/nature.jpg");
+    background-image: url("Pictures/mountain.jpeg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -99,12 +96,6 @@ body #balloon{
     min-width: 400px;
     font-size: 36px;
 }
-.title-card-sub{
-
-
-}
-
-
 
 
 /* About Me */
@@ -115,7 +106,6 @@ body #balloon{
     flex-wrap: wrap;
     flex-direction: row;
     background-color: rgba(37, 37, 37, 0.1);
-
     /*
     box-sizing: border-box;
     border-bottom: 2px solid #000;
@@ -123,7 +113,7 @@ body #balloon{
 }
 .about #intro-picture{
     /* text-align: center; */
-    margin: 30px;
+    margin: 20 30 0 35;
     text-align: center;
     flex: 1;
     justify-content: center;
@@ -131,14 +121,14 @@ body #balloon{
 .profile-picture{
     /* This is to edit just the profile picture */
     max-width: 350px;
-    max-height: 250px;
+    max-height: 220px;
     min-width:300px;
     min-height:200px;
     border-radius: 50px;
 }
 .about #intro-text{
     flex: 2;
-    padding: 5px 50px 30 30px;
+    padding: 5px 30px 0 30px;
     margin: 5px;
     min-width: 300px;
     max-width: 60%;
@@ -148,10 +138,26 @@ body #balloon{
     width: 90%;
     border-bottom: 2px solid rgba(0,0,0);
 }
+#about-contact{
+    margin: 15 0 0 0;
+}
+#about-margin{
+    margin: 0;
+}
 
+#about-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#about-icon p{
+    padding: 0 30 0 30;
+    text-align: center;
+}
 
-
-
+.about h2{
+    margin: 20 0 35 0;
+}
 /* Projects */
 
 
@@ -166,6 +172,12 @@ body #balloon{
     /*background-color: rgba(255, 239, 197, 0.4); */
 }
 
+#project-link a{ 
+    display: inline-block;
+    margin: 5 30 0 30;
+    color: rgb(76, 183, 255);
+}
+
 .grid-container{
     /*
     display: grid;
@@ -178,19 +190,28 @@ body #balloon{
 }
 .grid-item{
     flex: 1 0 20%;
-    border: 2px solid;
+    border: 3px solid;
     padding: 20px;
     margin: 15px;
     min-width: 350px;
     max-width: 20%;
+    max-height: 550px;
+    overflow: auto;
     transition: .3s;
     background-color: white;
+}
+
+.grid-item img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 300px;
+    display: block;
 }
 
 .grid-item #project-points{
     padding: 10;
     text-align: left;
-    font-size: 14px;
 }
 
 .grid-item:hover{
@@ -206,6 +227,14 @@ body #balloon{
 .skill-education{
     display: flex;
     flex-direction: column;
+    margin: 15px 0 0 0;
+}
+
+.language-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .language-skill{
     /* 
@@ -290,4 +319,19 @@ body #balloon{
 #work-history{
     margin: 0 0 0 5%;
     width: 70%;
+}
+
+
+.footer{
+    background-color: rgb(129, 129, 129);
+    color: white;
+}
+
+#footer-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer p{
+    padding: 0 20 0 20;
 }
