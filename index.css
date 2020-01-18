@@ -319,6 +319,10 @@ body #balloon{
 #work-history{
     margin: 0 0 0 5%;
     width: 70%;
+    font-size: 16px;
+}
+#work-history h3{
+    font-size: 24px;
 }
 
 
